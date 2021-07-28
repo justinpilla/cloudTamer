@@ -1,0 +1,8 @@
+# git ignore file. DO NOT PUT KEYS INTO REPOSITORY
+
+# REMOVE THE HASTAG IN FRONT OF THE LINE BELOW TO MAKE THE GITIGNORE WORK
+# config.json
+__pycache__/
+venv/
+.idea/
+config.json
