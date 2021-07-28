@@ -31,7 +31,7 @@ class phpTravels_tc4:
         rentals_Tab = driver.find_element_by_xpath("//*[@id=\"search\"]/div/div/div/div/div/nav/ul/li[4]/a")
         tours_Tab = driver.find_element_by_xpath("//*[@id=\"search\"]/div/div/div/div/div/nav/ul/li[5]/a")
         cars_Tab = driver.find_element_by_xpath("//*[@id=\"search\"]/div/div/div/div/div/nav/ul/li[6]/a")
-        visa_Tab = driver.find_element_by_xpath("//*[@id=\"search\"]/div/div/div/div/div/nav/ul/li[7]/a")
+        #visa_Tab = driver.find_element_by_xpath("//*[@id=\"search\"]/div/div/div/div/div/nav/ul/li[7]/a")
 
         search1 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[1]/div/div/form/div/div/div[4]/button")
         search2 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[2]/div/div/form/div/div/div[3]/div[4]/button")
@@ -39,12 +39,12 @@ class phpTravels_tc4:
         search4 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[4]/div/div/form/div/div/div[4]/button")
         search5 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[5]/div/div/form/div/div/div[4]/button")
         search6 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[6]/div/div/form/div/div/div[5]/button")
-        search7 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[7]/div/div/form/div/div/div[4]/button")
+        #search7 = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[7]/div/div/form/div/div/div[4]/button")
 
-        tabsList = [hotels_Tab, flights_Tab, boats_Tab, rentals_Tab, tours_Tab, cars_Tab, visa_Tab]
-        searchBtnList = [search1, search2, search3, search4, search5, search6, search7]
+        tabsList = [hotels_Tab, flights_Tab, boats_Tab, rentals_Tab, tours_Tab, cars_Tab]
+        searchBtnList = [search1, search2, search3, search4, search5, search6]
 
-        for i in range(7):
+        for i in range(len(tabsList)):
             tabsList[i].click()
             time.sleep(1)
             assert searchBtnList[i].is_displayed() == True
