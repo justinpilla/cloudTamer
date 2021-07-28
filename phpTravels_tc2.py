@@ -56,7 +56,7 @@ class phpTravels_tc2:
         firstClass = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[2]/div/div/form/div/div/div[1]/div[2]/div/div/div/ul/li[1]")
         firstClass.click()
 
-        time.sleep(10)
+        time.sleep(5)
 
         driver.quit()
 

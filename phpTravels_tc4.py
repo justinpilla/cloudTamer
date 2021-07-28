@@ -49,7 +49,7 @@ class phpTravels_tc4:
             time.sleep(1)
             assert searchBtnList[i].is_displayed() == True
 
-        time.sleep(10)
+        time.sleep(5)
 
         driver.quit()
 

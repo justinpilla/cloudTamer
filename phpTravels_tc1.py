@@ -68,7 +68,7 @@ class phpTravels_tc1:
         submitButton = driver.find_element_by_xpath("/html/body/div[2]/div[1]/div[1]/div[3]/div/div/div/div/div/div/div[1]/div/div/form/div/div/div[4]/button")
         submitButton.click()
 
-        time.sleep(10)
+        time.sleep(5)
 
         driver.quit()
 

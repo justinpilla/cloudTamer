@@ -44,7 +44,7 @@ class phpTravels_tc3:
         time.sleep(1)
         assert returnDate[0].is_displayed() == False
 
-        time.sleep(10)
+        time.sleep(5)
 
         driver.quit()
 
